@@ -83,8 +83,7 @@ button {
   margin: 1em 0;
 }
 
-.video-container video,
-.video-container iframe {
+.video-container video {
   width: 80%;
   max-width: 800px;
 }
