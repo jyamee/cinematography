@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -11,11 +19,49 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
-          <li><a href="support.html">SUPPORT</a></li>
+          <li><a href="support.html">FEATURED VIDEOS</a></li>
           <li><a href="connect.html">LET'S CONNECT</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
+
+    <div class="video-background">
+      <video id="bgVideo" autoplay muted loop>
+        <source src="media/28707-371213524.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <section id="videos" class="videos">
+      <h2>RAFEEQ MEDIA</h2>
+      <div class="video-container">
+        <video controls>
+          <source
+            src="media/yt5s.com-Sony A7III 2023 _ Cinematic Video Reel-(1080p).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-container">
+        <video controls>
+          <source
+            src="media/yt5s.com-A Walk At The Park _ SonyA73 4K Sigma 24-70mm F2.8 _-(1080p).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-container">
+        <video controls>
+          <source
+            src="media/yt5s.com-Hard Work and Dedication _ Sony A7III 2023 _ Short Video-(1080p).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <script src="js/vid.js"></script>
   </body>
 </html>

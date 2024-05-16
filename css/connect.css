@@ -35,45 +35,85 @@ header {
   font-size: 1.2em;
 }
 
-.about {
-  padding: 5em 2em;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+.connect {
+  position: relative;
+  background: url("images/background.jpg") no-repeat center center/cover;
+  height: 100vh;
   color: white;
-}
-
-.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  text-align: left;
+  padding: 0 2em;
 }
 
-.about-content {
-  max-width: 600px;
-  margin-bottom: 2em;
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.about-content h1 {
+.connect-left,
+.connect-right {
+  width: 45%;
+}
+
+.connect-left h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 
-.about-content p {
+.connect-left p {
   font-size: 1.2em;
-  line-height: 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
-.about-image {
-  max-width: 600px;
+.social-icons {
+  margin: 1em 0;
 }
 
-.about-image img {
+.social-icons a {
+  color: white;
+  margin: 0 0.5em;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form input,
+form textarea,
+form select,
+form button {
+  margin: 0.5em 0;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
   width: 100%;
-  border-radius: 10px;
+}
+
+form button {
+  padding: 0.5em 1em;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ff3300;
 }
 .roboto-condensed {
   font-family: "Roboto Condensed", sans-serif;
