@@ -9,13 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Anta&family=Dosis:wght@200..800&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anta&family=Dosis:wght@200..800&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Let's Connect - Videographer Portfolio</title>
+    <title>RAFEEQ MEDIA</title>
     <link rel="stylesheet" href="css/connect.css" />
     <link
       rel="stylesheet"
@@ -25,15 +19,20 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="films.html">FEATURED WORK</a></li>
-          <li><a href="connect.html">LET'S CONNECT</a></li>
-          <li><a href="contact.html">SOCIALS</a></li>
+        <div class="logo">Logo</div>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-menu" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="connect.html">Let's Connect</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <br />
     <br />
     <br />
     <br />
@@ -43,53 +42,46 @@
         Your browser does not support the video tag.
       </video>
     </div>
+
     <section class="connect">
       <div class="overlay">
-        <div class="connect-left">
+        <div class="connect-info">
           <h1><b>Let’s Connect!</b></h1>
-          <p>support@Rafeeqmedia.com <br /><br />phone number: 815 668 3710</p>
-          <p>PO Box Atlanta,<br />GA 30318</p>
+          <p>musa@rafeeqmedia.com</p>
+          <p>PO Box #30318<br />Atlanta, GA 30318</p>
           <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://www.youtube.com" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="https://www.twitter.com" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
-        <div class="connect-right">
-          <form id="contactForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required />
+        <div class="form-container">
+          <form action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required />
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required />
 
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
 
-            <label for="message">Message:</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
 
-            <label for="budget">Budget:</label>
-            <select id="budget" name="budget" required>
-              <option value="$0-$2000">$0-$2000</option>
-              <option value="$3000-$5000">$3000-$5000</option>
-              <option value="$6000-$10000">$6000-$10000</option>
-              <option value="$10000+">$10000+</option>
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget">
+              <option value="0-2000">$0 - $2000</option>
+              <option value="3000-5000">$3000 - $5000</option>
+              <option value="6000-10000">$6000 - $10000</option>
+              <option value="10000+">$10000+</option>
             </select>
 
-            <label for="date">Preferred Date:</label>
+            <label for="date">Preferred Date</label>
             <input type="date" id="date" name="date" required />
 
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>

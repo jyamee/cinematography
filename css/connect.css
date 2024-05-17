@@ -1,86 +1,82 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* Existing styles omitted for brevity */
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1em 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
-.navbar ul {
+.logo {
+  color: white;
+  font-size: 1.5em;
+}
+.navbar-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
 }
 
-.navbar ul li {
+.navbar-menu li {
   margin: 0 1em;
 }
 
-.navbar ul li a {
-  color: rgb(208, 172, 208);
+.navbar-menu li a {
   text-decoration: none;
   font-size: 1.2em;
+  color: rgb(208, 172, 208);
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
 }
 
 .connect {
   position: relative;
-  background: url("images/background.jpg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  padding: 0 2em;
+  background: url("media/connect.jpg") no-repeat center center/cover;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2em;
-  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  color: white;
+  text-align: center;
 }
 
-.connect-left,
-.connect-right {
-  width: 45%;
+.connect-info {
+  margin-bottom: 2em;
 }
 
-.connect-left h1 {
+.connect-info h1 {
+  margin-bottom: 1em;
   font-size: 2.5em;
-  margin-bottom: 0.5em;
+  animation: fadeIn 2s;
 }
 
-.connect-left p {
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.social-icons {
-  margin: 1em 0;
+.connect-info p {
+  margin: 0.5em 0;
 }
 
 .social-icons a {
-  color: white;
   margin: 0 0.5em;
+  color: white;
   font-size: 1.5em;
-  text-decoration: none;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
 }
 
 form {
@@ -88,36 +84,36 @@ form {
   flex-direction: column;
 }
 
-form label,
+form label {
+  margin: 0.5em 0 0.2em;
+}
+
 form input,
-form textarea,
 form select,
-form button {
-  margin: 0.5em 0;
-}
-
-form input,
 form textarea,
-form select {
+form button {
   padding: 0.5em;
-  border-radius: 5px;
+  margin-bottom: 1em;
   border: none;
-  width: 100%;
+  border-radius: 5px;
 }
 
 form button {
-  padding: 0.5em 1em;
-  background: #ff6600;
+  background-color: #d81e05;
   color: white;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #ff3300;
-}
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .form-container {
+    width: 90%;
+  }
+}
 .video-background {
   position: fixed;
   top: 0;
@@ -139,8 +135,4 @@ form button:hover {
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
-}
-.dosis {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
 }
