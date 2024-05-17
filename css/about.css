@@ -30,9 +30,11 @@ header {
 }
 
 .navbar ul li a {
-  color: white;
+  color: rgb(208, 172, 208);
   text-decoration: none;
   font-size: 1.2em;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
 }
 
 .about {
@@ -59,6 +61,9 @@ header {
 .about-content h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  color: rgb(208, 172, 208);
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
 }
 
 .about-content p {
@@ -74,9 +79,6 @@ header {
 .about-image img {
   width: 100%;
   border-radius: 10px;
-}
-.roboto-condensed {
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .video-background {
@@ -100,4 +102,8 @@ header {
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+.dosis {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
 }
