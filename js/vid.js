@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Animation for h1 on home page
   const heroTitle = document.querySelector(".hero h1");
-  heroTitle.style.opacity = "0";
-  setTimeout(() => {
-    heroTitle.style.opacity = "1";
-    heroTitle.style.transition = "opacity 2s";
-  }, 500);
+  if (heroTitle) {
+    heroTitle.style.opacity = "0";
+    setTimeout(() => {
+      heroTitle.style.opacity = "1";
+      heroTitle.style.transition = "opacity 2s";
+    }, 500);
+  }
 });

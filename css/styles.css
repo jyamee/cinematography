@@ -1,3 +1,4 @@
+/* Global Styles */
 body,
 html {
   margin: 0;
@@ -5,10 +6,12 @@ html {
   font-family: Arial, sans-serif;
 }
 
+/* Navbar Styles */
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar {
@@ -16,6 +19,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+}
+
+.logo img {
+  max-width: 100px;
 }
 
 .navbar-toggle {
@@ -45,20 +52,19 @@ header {
   font-weight: 400;
 }
 
+/* Hero Section */
 .hero {
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
   color: #333;
-  background: url("images/background.jpg") no-repeat center center/cover;
 }
 
-.hero h1 {
-  margin-bottom: 1em;
-  font-size: 3em;
-  animation: fadeIn 2s;
-  color: rgb(208, 172, 208);
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
+.hero-logo {
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -104,66 +110,17 @@ video {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
+  .navbar {
+    justify-content: space-between;
   }
 
-  .video-container {
-    flex-direction: column;
+  .navbar-toggle {
+    display: block;
   }
 
-  video {
-    width: 90%;
-  }
-}
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-}
-
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-}
-
-.navbar-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-menu li {
-  margin: 0 1em;
-}
-
-.navbar-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-@media (max-width: 768px) {
   .navbar-menu {
     display: none;
     flex-direction: column;
@@ -171,9 +128,37 @@ html {
     top: 60px;
     right: 0;
     width: 100%;
+    background: rgba(0, 0, 0, 0.9);
   }
 
   .navbar-menu.show {
     display: flex;
+  }
+
+  .hero-logo img {
+    width: 80%;
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  video {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-menu {
+    top: 50px;
+  }
+
+  .hero-logo img {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
   }
 }
