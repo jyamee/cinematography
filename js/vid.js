@@ -1,8 +1,3 @@
-document.getElementById("toggleAudio").addEventListener("click", function () {
-  const video = document.getElementById("bgVideo");
-  video.muted = !video.muted;
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const navbarToggle = document.getElementById("navbar-toggle");
   const navbarMenu = document.getElementById("navbar-menu");
