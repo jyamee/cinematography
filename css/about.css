@@ -12,7 +12,6 @@ header {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.7);
   padding: 1em 0;
   text-align: center;
 }
@@ -30,7 +29,7 @@ header {
 }
 
 .navbar ul li a {
-  color: rgb(208, 172, 208);
+  color: #fff;
   text-decoration: none;
   font-size: 1.2em;
   font-family: "Madimi One", sans-serif;
@@ -61,7 +60,7 @@ header {
 .about-content h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  color: rgb(208, 172, 208);
+  color: #fff;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
 }
@@ -118,7 +117,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
@@ -126,11 +124,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-}
-
-.logo {
-  color: white;
-  font-size: 1.5em;
 }
 
 .navbar-toggle {
@@ -167,10 +160,6 @@ header {
     top: 60px;
     right: 0;
     width: 100%;
-  }
-
-  .navbar-toggle {
-    display: block;
   }
 
   .navbar-menu.show {

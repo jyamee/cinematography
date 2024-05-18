@@ -9,7 +9,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
@@ -17,11 +16,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-}
-
-.logo {
-  color: white;
-  font-size: 1.5em;
 }
 
 .navbar-toggle {
@@ -115,15 +109,10 @@ video {
   .navbar-menu {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 100%;
     right: 0;
     width: 100%;
-  }
-
-  .navbar-toggle {
-    display: block;
   }
 
   .video-container {
@@ -138,14 +127,8 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
 }
 
 .navbar {
@@ -153,11 +136,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-}
-
-.logo {
-  color: white;
-  font-size: 1.5em;
 }
 
 .navbar-toggle {
@@ -189,7 +167,6 @@ header {
   .navbar-menu {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 60px;
     right: 0;

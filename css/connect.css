@@ -3,7 +3,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
@@ -13,10 +12,6 @@ header {
   padding: 1em;
 }
 
-.logo {
-  color: white;
-  font-size: 1.5em;
-}
 .navbar-menu {
   list-style-type: none;
   margin: 0;
@@ -31,7 +26,7 @@ header {
 .navbar-menu li a {
   text-decoration: none;
   font-size: 1.2em;
-  color: rgb(208, 172, 208);
+  color: #fff;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
 }
@@ -48,7 +43,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   padding: 2em;
   color: white;
   text-align: center;
@@ -143,50 +137,6 @@ html {
   font-family: Arial, sans-serif;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-}
-
-.logo {
-  color: white;
-  font-size: 1.5em;
-}
-
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-}
-
-.navbar-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-menu li {
-  margin: 0 1em;
-}
-
-.navbar-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;
@@ -196,10 +146,6 @@ header {
     top: 60px;
     right: 0;
     width: 100%;
-  }
-
-  .navbar-toggle {
-    display: block;
   }
 
   .navbar-menu.show {
