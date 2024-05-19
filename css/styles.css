@@ -11,7 +11,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar {
@@ -118,7 +117,7 @@ video {
   }
 
   .navbar-toggle {
-    display: block;
+    display: flex;
   }
 
   .navbar-menu {
@@ -128,11 +127,10 @@ video {
     top: 60px;
     right: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
   }
 
   .navbar-menu.show {
-    display: flex;
+    display: block;
   }
 
   .hero-logo img {
