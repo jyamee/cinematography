@@ -149,3 +149,7 @@ header {
     width: 100%;
   }
 }
+
+a {
+  background-color: black;
+}
