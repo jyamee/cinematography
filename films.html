@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anta&family=Dosis:wght@200..800&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>RAFEEQ MEDIA</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/films.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Featured Work - Videographer Portfolio</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="media/logo-removebg-preview.png" width="200" alt="logo" />
+          <img src="media/logo-removebg-preview.png" alt="logo" />
         </div>
         <button class="navbar-toggle" id="navbar-toggle">
           <i class="fas fa-bars"></i>
@@ -32,30 +31,34 @@
     </header>
 
     <div class="video-background">
-      <video id="bgVideo" autoplay muted loop>
+      <video autoplay muted loop>
         <source src="media/smoke.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
+
     <section class="films">
-      <h1></h1>
-      <div class="videos-container">
-        <div class="video-item" onclick="playVideo(this)">
+      <div class="container">
+        <h1></h1>
+        <div class="video-container">
           <video
             src="media/yt5s.com-Sony A7III 2023 _ Cinematic Video Reel-(1080p).mp4"
-            muted
+            controls
           ></video>
-        </div>
-        <div class="video-item" onclick="playVideo(this)">
+
           <video
-            src="media/yt5s.com-A Walk At The Park _ SonyA73 4K Sigma 24-70mm F2.8 _-(1080p).mp4"
-            muted
+            src="media/yt5s.com-Friday Night Indoors (Short Film Samsung Galaxy Ultra s22)-(1080p).mp4"
+            controls
           ></video>
-        </div>
-        <div class="video-item" onclick="playVideo(this)">
+
           <video
             src="media/yt5s.com-Hard Work and Dedication _ Sony A7III 2023 _ Short Video-(1080p).mp4"
-            muted
+            controls
+          ></video>
+
+          <video
+            src="media/yt5s.com-A Walk At The Park _ SonyA73 4K Sigma 24-70mm F2.8 _-(1080p).mp4"
+            controls
           ></video>
         </div>
       </div>
