@@ -11,7 +11,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -22,7 +22,8 @@ header {
 }
 
 .logo img {
-  max-width: 100px;
+  width: 90%;
+  max-width: 200px;
 }
 
 .navbar-toggle {
@@ -111,8 +112,8 @@ header {
 }
 
 .hero-logo img {
-  width: 60%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 4000px;
   margin-bottom: 2em;
 }
 
@@ -132,7 +133,7 @@ header {
 
 @media (max-width: 768px) {
   .hero-logo img {
-    width: 80%;
+    width: 90%;
   }
 
   .video-container video {
@@ -152,4 +153,7 @@ header {
 
 a {
   background-color: black;
+}
+footer {
+  border: 50%;
 }

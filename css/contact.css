@@ -185,13 +185,8 @@ header {
 .social .social-item .social-link:hover {
   color: #ffffff;
 }
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;
@@ -205,5 +200,15 @@ html {
 
   .navbar-menu.show {
     display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu li {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
   }
 }
