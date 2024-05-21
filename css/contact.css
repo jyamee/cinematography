@@ -212,3 +212,72 @@ header {
     text-align: center;
   }
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.contact-details,
+.payment-methods,
+.footer-logo {
+  flex: 1;
+  margin: 1em;
+}
+
+.payment-methods img {
+  margin: 0.5em;
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu li {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+  }
+}
