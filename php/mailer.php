@@ -19,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         //Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com';
+        $mail->Host = 'musa@rafeeqmedia.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'musa@rafeeqmedia.com';
+        $mail->Username = 'your_email@example.com';
         $mail->Password = 'your_password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
