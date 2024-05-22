@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding-top: 70px; /* Adjust padding to match the header height */
 }
 
 header {
@@ -137,6 +138,10 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
   .navbar-menu {
     display: none;
     flex-direction: column;
@@ -145,6 +150,7 @@ footer {
     top: 100%;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
+    z-index: 999; /* Ensure the menu is above other content */
   }
 
   .navbar-menu.show {
