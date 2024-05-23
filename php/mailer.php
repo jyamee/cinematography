@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'musa@rafeeqmedia.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'your_email@example.com';
-        $mail->Password = 'your_password';
+        $mail->Password = '06201992Kingmusa';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
