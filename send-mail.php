@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $budget = htmlspecialchars($_POST['budget']);
     $date = htmlspecialchars($_POST['date']);
 
-    $to = "Musa@rafeeqmedia.com";
+    $to = "musa@rafeeqmedia.com";
     $subject = "New Contact Form Submission";
     $body = "First Name: $firstname\nLast Name: $lastname\nEmail: $email\nMessage: $message\nBudget: $budget\nPreferred Date: $date";
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'Musa@rafeeqmedia.com';
+        $mail->Username   = 'musa@rafeeqmedia.com';
         $mail->Password   = '06201992Kingmusa';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
