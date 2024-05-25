@@ -1,5 +1,4 @@
 <?php
-// Include Composer's autoloader
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -20,21 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
     try {
         // Server settings
-        $mail->SMTPDebug = 0;                                   // Enable verbose debug output (0 = off)
-        $mail->isSMTP();                                        // Set mailer to use SMTP
-        $mail->Host       = 'smtp.office365.com';                   // Specify main and backup SMTP servers
-        $mail->SMTPAuth   = true;                               // Enable SMTP authentication
-        $mail->Username   = 'Musa@rafeeqmedia.com';             // SMTP username
-        $mail->Password   = '06201992Kingmusa';              // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     // Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` also accepted
-        $mail->Port       = 587;                                // TCP port to connect to
+        $mail->SMTPDebug = 0;
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.office365.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'musa@rafeeqmedia.com';
+        $mail->Password   = '06201992Kingmusa';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
 
         // Recipients
         $mail->setFrom($email, "$firstname $lastname");
-        $mail->addAddress($to);                                 // Add a recipient
+        $mail->addAddress($to);
 
         // Content
-        $mail->isHTML(false);                                   // Set email format to plain text
+        $mail->isHTML(false);
         $mail->Subject = $subject;
         $mail->Body    = $body;
 
@@ -44,3 +43,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
+?>
