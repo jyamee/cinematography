@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Server settings
         $mail->SMTPDebug = 0;                                   // Enable verbose debug output (0 = off)
         $mail->isSMTP();                                        // Set mailer to use SMTP
-        $mail->Host       = 'smtp.gmail.com';                   // Specify main and backup SMTP servers
+        $mail->Host       = 'smtp.office365.com';                   // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                               // Enable SMTP authentication
         $mail->Username   = 'musa@rafeeqmedia.com';             // SMTP username
         $mail->Password   = '06201992Kingmusa';              // SMTP password
