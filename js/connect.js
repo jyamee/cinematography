@@ -14,5 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function SendEmail() {
-  console.log("test function");
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "alyanom27@gmail.com",
+    Password: "C0FFAE9A0BE7C225AAE1CF412A0BB4322085",
+    To: "musa@rafeeqmedia.com",
+    From: "alyanom27@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
 }
