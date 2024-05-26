@@ -12,3 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Form submitted successfully!");
   });
 });
+
+function SendEmail() {
+  console.log("test function");
+}
