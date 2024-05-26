@@ -52,7 +52,16 @@
           <img src="media/logo-removebg-preview.png" width="400" alt="" />
         </p>
         <div class="form-container">
-          <form id="contact-form" action="" method="POST">
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="d50aa6fe-c48f-4919-a203-1e2f1e8768a3"
+            />
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" required />
             <label for="lname">Last Name</label>
@@ -107,38 +116,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
-
-      function SendMessage() {
-        let fname = document.getElementById("First Name").value;
-        let lname = document.getElementById("Last Name").value;
-        let email = document.getElementById("Email").value;
-        let budget = document.getElementById("budget").value;
-        let date = document.getElementById("date").value;
-        let Send = document.getElementById("Send Message").value;
-
-        let body =
-          "fname:" +
-          fname +
-          "lname:" +
-          lname +
-          "Email<br>" +
-          Email +
-          "budget:<br>" +
-          budget +
-          "date:<br>" +
-          date +
-          "<br> Send Message" +
-          Send;
-
-        Email.send({
-          SecureToken: "e98d2958-f8fc-4abe-ae83-51d0fbb34db4",
-          To: "alyanom27@gmail.com",
-          From: "alyanom27@gmail.com",
-          Subject: "Message from let's connect form",
-          Body: "body",
-        }).then((message) => alert(message));
-      }
-    </script>
+    <script src="js/connect.js"></script>
   </body>
 </html>
